@@ -11,13 +11,13 @@ export default function Home() {
     { src: 'rey.jpg', classes: '' },
     { src: 'vader-art.jpg', classes: '' },
     { src: 'vader-luke.jpeg', classes: '' },
-    { src: 'vader-tropers.jpg', classes: '' },
+    { src: 'vader-tropers.jpg', classes: 'col-span-2' },
     { src: 'windu.jpg', classes: '' },
   ];
 
   return (
-    <main className="bg-blue-500">
-      <div className={'grid grid-cols-3 gap-1'}>
+    <main>
+      <div className={'grid grid-cols-3 gap-2'}>
         {imgs.map((img, index) => (
           <div
             key={index}
@@ -28,7 +28,7 @@ export default function Home() {
               alt={img.src.replace(/[-.]/g, ' ')} // Dynamically generate alt text
               width={400}
               height={160} // Use approximate aspect ratio
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover bottom-0"
             />
           </div>
         ))}
