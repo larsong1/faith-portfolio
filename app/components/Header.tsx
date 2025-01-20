@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function Header() {
-  return <div className="bg-gray-500">Sidebar</div>;
+  return <div className="bg-gray-300 mr-6">Sidebar</div>;
 }

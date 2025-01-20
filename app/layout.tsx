@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-400 my-14 mx-24`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white my-14 mx-24`}
       >
         <div className="grid grid-cols-12">
           <div className="col-span-2">
