@@ -1,23 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
+import { imgList } from './components/ImgList';
 
 export default function Home() {
-  const imgs = [
-    { src: 'Hamlet.png', classes: 'col-span-6 row-span-3' },
-    { src: 'henry v.png', classes: 'col-span-6 row-span-4' },
-    { src: 'macbeth.png', classes: 'col-span-3 row-span-3' },
-    { src: 'mag cover mockup.png', classes: 'col-span-3 row-span-3' },
-    { src: 'poster 1.jpg', classes: 'col-span-6 row-span-2' },
-    { src: 'stationary.png', classes: 'col-span-5 row-span-4' },
-    { src: 'tickets 1.jpg', classes: 'col-span-3 row-span-2' },
-    { src: 'vinyl 1.png', classes: 'col-span-4 row-span-3' },
-  ];
-
   return (
     <main className="min-h-screen">
-      <div className="grid grid-cols-12 auto-rows-[150px] gap-7">
-        {imgs.map((img, index) => (
-          <div key={index} className={`overflow-hidden ${img.classes || ''}`}>
+      <div className="grid grid-cols-12 auto-rows-[50px] gap-7">
+        {imgList.map((img, index) => (
+          <div
+            key={index}
+            className={`overflow-hidden hover:scale-105 transition hover:shadow-lg ${
+              img.classes || ''
+            }`}
+          >
             <Image
               src={`/img/${img.src}`}
               alt={img.src.replace(/[-.]/g, ' ')} // Dynamically generate alt text
