@@ -29,10 +29,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white my-14 mx-24`}
       >
         <div className="grid grid-cols-12">
-          <div className="col-span-2">
+          <div className="col-span-12 xl:col-span-2">
             <Header />
           </div>
-          <div className="col-span-10">{children}</div>
+          <div className="col-span-12 xl:col-span-10">{children}</div>
         </div>
       </body>
     </html>

@@ -5,11 +5,11 @@ import { imgList } from './components/ImgList';
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <div className="grid grid-cols-12 auto-rows-[50px] gap-7">
+      <div className="grid grid-cols-12 lg:auto-rows-[50px] gap-7">
         {imgList.map((img, index) => (
           <div
             key={index}
-            className={`overflow-hidden hover:scale-105 transition hover:shadow-lg ${
+            className={`col-span-12 overflow-hidden hover:scale-105 transition hover:shadow-lg ${
               img.classes || ''
             }`}
           >
