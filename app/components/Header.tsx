@@ -16,7 +16,7 @@ export default function Header() {
           <p className="text-[18px]">FAITH MCCREADIE</p>
         </div>
       </div>
-      <div className="my-5 h-20 xl:mr-12 flex xl:flex-wrap xl:grid xl:grid-cols-1 gap-6 text-[15px]">
+      <div className="hidden md:flex my-5 h-20 xl:mr-12 xl:flex-wrap xl:grid xl:grid-cols-1 gap-6 text-[15px]">
         <div className="flex flex-col justify-center hover:scale-105 transition">
           <a href="/about">ABOUT</a>
         </div>
