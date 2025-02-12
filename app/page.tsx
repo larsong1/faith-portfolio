@@ -4,13 +4,13 @@ import { imgList } from './components/ImgList';
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <div className="grid grid-cols-12 lg:auto-rows-[50px] gap-7">
+    <main>
+      <div className="grid grid-cols-3 gap-6">
         {imgList.map((img, index) => (
           <div
             key={index}
-            className={`col-span-12 overflow-hidden hover:scale-105 transition hover:shadow-lg ${
-              img.classes || ''
+            className={`col-span-1 object-contain hover:scale-105 transition hover:shadow-lg ${
+              img?.divClasses || ''
             }`}
           >
             <Image
@@ -18,7 +18,7 @@ export default function Home() {
               alt={img.src.replace(/[-.]/g, ' ')} // Dynamically generate alt text
               width={400}
               height={400} // Default dimensions; actual size controlled by grid
-              className="h-full w-full object-cover"
+              className="h-full w-full"
             />
           </div>
         ))}

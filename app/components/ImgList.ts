@@ -1,11 +1,11 @@
 export const imgList = [
-  { src: 'mag cover mockup.png', classes: 'lg:col-span-7 lg:row-span-6' },
-  { src: 'vina soda.png', classes: 'lg:col-span-5 lg:row-span-4' },
-  { src: 'pink floyd.png', classes: 'lg:col-span-5 lg:row-span-6' },
-  { src: 'book covers.png', classes: 'lg:col-span-7 lg:row-span-7' },
-  {
-    src: '5th ave.png',
-    classes: 'lg:col-span-5 lg:row-span-7 max-[1500px]:row-span-8',
-  },
-  { src: 'cards 3.png', classes: 'lg:col-span-7 lg:row-span-6' },
+  { src: 'macbeth.png', divClasses: '' },
+  { src: 'magazine.png', divClasses: '' },
+  { src: 'brochures.png', divClasses: '' },
+  { src: 'cards.png', divClasses: '' },
+  { src: 'app design.png', divClasses: '' },
+  { src: 'Asset 1.png', divClasses: '' },
+  { src: 'listen poster.png', divClasses: '' },
+  { src: 'pink floyd posters.png', divClasses: '' },
+  { src: 'web redesign.png', divClasses: '' },
 ];
