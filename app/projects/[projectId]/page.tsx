@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { imgList } from '@/app/components/ImgList';
 import { ImgObject } from '@/app/components/ImgList';
@@ -7,16 +7,8 @@ interface ProjectPageProps {
   params: Promise<{ projectId: string }>;
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const [projectId, setProjectId] = React.useState<string>('');
-
-  useEffect(() => {
-    const getParams = async () => {
-      const { projectId } = await params;
-      setProjectId(projectId);
-    };
-    getParams();
-  }, [params]);
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { projectId } = await params;
 
   const projectImgObject: ImgObject = imgList.find(
     (img) => img.id === projectId
