@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -18,13 +19,13 @@ export default function Header() {
       </div>
       <div className="flex gap-5 py-auto w-full justify-end">
         <div className="hover:scale-105 transition">
-          <a href="/about">ABOUT</a>
+          <Link href="/about">ABOUT</Link>
         </div>
         <div className="hover:scale-105 transition">
-          <a href="/projects">WORK</a>
+          <Link href="/projects">WORK</Link>
         </div>
         <div className="hover:scale-105 transition">
-          <a href="/contact">CONTACT</a>
+          <Link href="/contact">CONTACT</Link>
         </div>
       </div>
     </div>
