@@ -3,11 +3,13 @@ import Image from 'next/image';
 import { imgList } from '@/app/components/ImgList';
 import { ImgObject } from '@/app/components/ImgList';
 
-export default function ProjectPage({
-  params,
-}: {
-  params: { projectId: string };
-}) {
+interface ProjectPageProps {
+  params: {
+    projectId: string;
+  };
+}
+
+export default function ProjectPage({ params }: ProjectPageProps) {
   const projectImgObject: ImgObject = imgList.find(
     (img) => img.id === params.projectId
   ) as ImgObject;
