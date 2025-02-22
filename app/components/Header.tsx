@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 export default function Header() {
   const pathname = usePathname();
   const isRootRoute = pathname === '/';
+  const isAboutRoute = pathname === '/about';
 
   return (
     <div className="flex justify-between h-14 my-20">
@@ -28,9 +29,15 @@ export default function Header() {
         </Link>
       </div>
       <div className="w-full flex justify-end transition tracking-widest text-[14px] pt-4">
-        <Link href="/about" className="hover:scale-105">
-          ABOUT
-        </Link>
+        {isAboutRoute ? (
+          <Link href="/" className="hover:scale-105">
+            HOME
+          </Link>
+        ) : (
+          <Link href="/about" className="hover:scale-105">
+            ABOUT
+          </Link>
+        )}
       </div>
     </div>
   );
