@@ -1,34 +1,36 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
+  const pathname = usePathname();
+  const isRootRoute = pathname === '/';
+
   return (
     <div className="flex justify-between h-14 my-20">
-      <div className="w-full">
-        <p className="text-[18px]">FAITH McCREADIE</p>
-      </div>
-      <div className="">
+      {isRootRoute && (
+        <div className="w-full pt-4">
+          <p className="tracking-widest text-[14px]">FAITH MCCREADIE</p>
+        </div>
+      )}
+
+      <div className="min-w-[100px] w-fit">
         <Link href="/">
           <Image
             src={'/img/logo.png'}
             height={200}
             width={400}
-            className="h-full w-1/8 object-contain"
+            className="h-full w-auto object-contain"
             alt=""
           />
         </Link>
       </div>
-      <div className="flex gap-5 w-full justify-end">
-        <div className="hover:scale-105 transition">
-          <Link href="/about">ABOUT</Link>
-        </div>
-        <div className="hover:scale-105 transition">
-          <Link href="/projects">WORK</Link>
-        </div>
-        <div className="hover:scale-105 transition">
-          <Link href="/contact">CONTACT</Link>
-        </div>
+      <div className="w-full flex justify-end transition tracking-widest text-[14px] pt-4">
+        <Link href="/about" className="hover:scale-105">
+          ABOUT
+        </Link>
       </div>
     </div>
   );
