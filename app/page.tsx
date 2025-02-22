@@ -8,6 +8,19 @@ export default function Home() {
   return (
     <main>
       <div className="grid grid-cols-3 gap-6">
+        <div className="hover:scale-105 col-span-1">
+          <video
+            width={400}
+            height={400}
+            autoPlay
+            loop
+            muted
+            className={`object-cover w-full h-full`}
+          >
+            <source src="/img/fade (1).mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         {imgList.map((img, index) => (
           <div
             key={index}
@@ -15,7 +28,7 @@ export default function Home() {
               img?.divClasses || ''
             }`}
           >
-            {img.src.endsWith('.mp4') ? (
+            {img.mainImgSrc.endsWith('.mp4') ? (
               <Link href={`/projects/${img.id}`}>
                 <video
                   width={400}
@@ -26,7 +39,7 @@ export default function Home() {
                   className="h-full w-full"
                 >
                   <source
-                    src={`/img/${img.id + '/' + img.src}`}
+                    src={`/img/${img.id + '/' + img.mainImgSrc}`}
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -35,8 +48,8 @@ export default function Home() {
             ) : (
               <Link href={`/projects/${img.id}`}>
                 <Image
-                  src={`/img/${img.id + '/' + img.src}`}
-                  alt={img.src.replace(/[-.]/g, ' ')} // Dynamically generate alt text
+                  src={`/img/${img.id + '/' + img.mainImgSrc}`}
+                  alt={img.mainImgSrc.replace(/[-.]/g, ' ')} // Dynamically generate alt text
                   width={400}
                   height={400} // Default dimensions; actual size controlled by grid
                   className="h-full w-full cursor-pointer"
