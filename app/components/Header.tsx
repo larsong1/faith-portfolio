@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
 
 export default function Header() {
   const pathname = usePathname();
@@ -10,7 +11,12 @@ export default function Header() {
   const isAboutRoute = pathname === '/about';
 
   return (
-    <div className="flex justify-between h-14 my-20">
+    <div
+      className={clsx(
+        'flex justify-between h-14 my-20',
+        !isRootRoute && 'border-b border-black pb-5 h-19 mb-20 mt-0'
+      )}
+    >
       {isRootRoute && (
         <div className="w-full pt-4">
           <p className="tracking-widest text-[14px]">FAITH MCCREADIE</p>
