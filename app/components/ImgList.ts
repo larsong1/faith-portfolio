@@ -31,7 +31,7 @@ export const imgList: ImgObject[] = [
       },
       {
         src: '2 books.png',
-        divClasses: 'col-span-full row-span-10',
+        divClasses: 'col-span-1 md:col-span-full row-span-10',
         imgClasses: 'w-full h-full',
       },
     ],
@@ -231,14 +231,10 @@ export const imgList: ImgObject[] = [
     id: 'web_redesign',
     projectPics: [
       {
-        src: 'MacBook Air - 8.png',
-        divClasses: 'row-start-1 row-end-11',
-        imgClasses: 'h-[1200px]',
+        src: 'web_redesign_walkthrough.mp4',
+        divClasses: 'col-span-full',
+        imgClasses: 'object-fit h-[850px] w-full',
       },
-      { src: 'abr2.png', divClasses: '', imgClasses: '' },
-      { src: 'abr3.png', divClasses: '', imgClasses: '' },
-      { src: 'MacBook Air - 9.png', divClasses: '', imgClasses: 'h-[1100px]' },
-      { src: 'MacBook Air - 10.png', divClasses: '', imgClasses: 'h-[800px]' },
     ],
     title: 'Web Redesign',
     summary:
