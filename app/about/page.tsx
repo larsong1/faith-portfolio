@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 export default function Page() {
   return (
-    <div className="flex">
-      <div className="basis-1/2 pr-[80px]">
+    <div className="flex-col lg:flex-row flex">
+      <div className="basis-1/2 pb-10 pr-[50px] lg:pr-[80px]">
         <p className="tracking-widest text-2xl mb-7">ABOUT</p>
         <p>
           Hi, I’m Faith, a graphic design student at BYU in Provo. I absolutely
@@ -21,7 +21,7 @@ export default function Page() {
           around and reach out to me, I’d love to hear from you!
         </p>
       </div>
-      <div className="pl-[80px] basis-1/2 tracking-widest">
+      <div className="lg:pl-[80px] basis-1/2 tracking-widest">
         <Image
           src="/img/portrait.jpg"
           alt="Faith McCreadie"

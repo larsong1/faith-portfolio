@@ -19,7 +19,9 @@ export default function Header() {
     >
       {isRootRoute && (
         <div className="w-full pt-4">
-          <p className="tracking-widest text-[14px]">FAITH MCCREADIE</p>
+          <p className="tracking-widest text-[14px] hidden sm:flex">
+            FAITH MCCREADIE
+          </p>
         </div>
       )}
 

@@ -7,20 +7,22 @@ import { imgList } from './components/ImgList';
 export default function Home() {
   return (
     <main>
-      <div className="grid grid-cols-3 gap-6">
-        <div className="hover:scale-105 col-span-1">
-          <video
-            width={400}
-            height={400}
-            autoPlay
-            loop
-            muted
-            className={`object-cover w-full h-full`}
-          >
-            <source src="/img/fade (1).mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+      <div className="grid-cols-1 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <Link href={`/about`}>
+          <div className="hover:scale-105 col-span-1">
+            <video
+              width={400}
+              height={400}
+              autoPlay
+              loop
+              muted
+              className={`object-cover w-full h-full`}
+            >
+              <source src="/img/fade (1).mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </Link>
         {imgList.map((img, index) => (
           <div
             key={index}

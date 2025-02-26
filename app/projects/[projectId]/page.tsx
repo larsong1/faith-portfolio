@@ -22,7 +22,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
         <div className="w-3/4 mx-auto">{projectImgObject.summary}</div>
       </div>
-      <div className="grid grid-cols-12 auto-rows-[50px] gap-7">
+      <div className="grid grid-cols-1 md:grid-cols-12 md:auto-rows-[50px] gap-7">
         {projectImgObject.projectPics.map(({ src, divClasses, imgClasses }) => (
           <React.Fragment key={src}>
             {src.endsWith('.mp4') ? (
@@ -33,7 +33,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   autoPlay
                   loop
                   muted
-                  className={`object-cover w-full h-full ${imgClasses}`}
+                  className={`object-fit w-full h-full ${imgClasses}`}
                 >
                   <source
                     src={`/img/${projectImgObject.id + '/' + src}`}
