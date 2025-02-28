@@ -20,20 +20,21 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="text-3xl uppercase tracking-widest">
           {projectImgObject.title}
         </div>
-        <div className="w-3/4 mx-auto">{projectImgObject.summary}</div>
+        <div className="w-4/5 mx-auto text-sm">{projectImgObject.summary}</div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 md:auto-rows-[50px] gap-7">
         {projectImgObject.projectPics.map(({ src, divClasses, imgClasses }) => (
           <React.Fragment key={src}>
             {src.endsWith('.mp4') ? (
-              <div className={`col-span-4 row-span-5 ${divClasses}`}>
+              <div className={divClasses ?? 'col-span-4 row-span-6'}>
                 <video
                   width={400}
                   height={400}
                   autoPlay
                   loop
                   muted
-                  className={`object-fit w-full h-full ${imgClasses}`}
+                  playsInline
+                  className={`object-cover w-full h-full ${imgClasses}`}
                 >
                   <source
                     src={`/img/${projectImgObject.id + '/' + src}`}
@@ -43,7 +44,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 </video>
               </div>
             ) : (
-              <div className={`col-span-4 row-span-6 ${divClasses}`}>
+              <div className={divClasses ?? 'col-span-4 row-span-6'}>
                 <Image
                   src={`/img/${projectImgObject.id + '/' + src}`}
                   alt={src.replace(/[-.]/g, ' ')} // Dynamically generate alt text

@@ -15,18 +15,23 @@ interface ProjectPictures {
 
 export const imgList: ImgObject[] = [
   {
-    mainImgSrc: 'macbeth.png',
+    mainImgSrc: 'book graphic.png',
     divClasses: '',
     id: 'classic_book_covers',
     projectPics: [
       {
         src: 'henry v.png',
-        divClasses: 'col-span-6 row-span-7',
+        divClasses: 'col-span-4 row-span-6',
         imgClasses: 'w-full h-full',
       },
       {
         src: 'hamlet.png',
-        divClasses: 'col-span-6 row-span-7',
+        divClasses: 'col-span-4 row-span-6',
+        imgClasses: 'w-full h-full',
+      },
+      {
+        src: 'macbeth.png',
+        divClasses: 'col-span-4 row-span-6',
         imgClasses: 'w-full h-full',
       },
       {
@@ -46,42 +51,42 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'mag cover1 copy.png',
-        divClasses: 'row-start-1 row-end-7',
+        divClasses: 'col-span-4 row-span-6',
         imgClasses: 'h-full w-full',
       },
       {
         src: 'mag cover2.png',
-        divClasses: 'row-start-1 row-end-7',
+        divClasses: 'col-span-4 row-span-6',
         imgClasses: 'h-full w-full',
       },
       {
         src: 'mag cover3.png',
-        divClasses: 'row-start-1 row-end-7',
+        divClasses: 'col-span-4 row-span-6',
         imgClasses: 'h-full w-full',
       },
       {
         src: 'mag pages mockup 2.png',
-        divClasses: 'col-start-1 col-end-7 row-span-6',
+        divClasses: 'col-span-6 row-span-6',
         imgClasses: 'h-full w-full',
       },
       {
         src: 'mag table of contents.png',
-        divClasses: 'col-start-7 col-end-13 row-span-6',
+        divClasses: 'col-span-6 row-span-6',
         imgClasses: 'h-full w-full',
       },
       {
         src: 'mag pages mockup 3.png',
-        divClasses: 'row-span-4',
+        divClasses: 'row-span-4 col-span-4',
         imgClasses: 'h-full w-full',
       },
       {
         src: 'pages 1-2.png',
-        divClasses: 'row-span-4',
+        divClasses: 'row-span-4 col-span-4',
         imgClasses: 'h-full w-full',
       },
       {
         src: 'pages 3-4.png',
-        divClasses: 'row-span-4',
+        divClasses: 'row-span-4 col-span-4',
         imgClasses: 'h-full w-full',
       },
       {
@@ -125,7 +130,7 @@ export const imgList: ImgObject[] = [
         imgClasses: '',
       },
     ],
-    title: '5th Avenue Theater',
+    title: '5th Avenue Theatre',
     summary:
       'The 5th Avenue Theatre in Seattle is something I have visited many times throughout my life. It’s a staple of the city and brings people together in an impactful way. I wanted my design to be simple but also seem elegant to show that this theatre is for everyone? I also based it on the geometric star shapes in the ornate ceiling and created a very geometric shape for the logo. By doing so I hoped to pay homage to the rich history of the theatre.',
   },
@@ -136,17 +141,17 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'cards mockup 2.png',
-        divClasses: 'col-span-8 row-start-1 row-end-11',
+        divClasses: 'col-span-8 row-span-10',
         imgClasses: '',
       },
       {
         src: 'cards2.png',
-        divClasses: 'row-start-1 row-end-6',
+        divClasses: 'col-span-4 row-span-5',
         imgClasses: '',
       },
       {
         src: 'cards4.png',
-        divClasses: 'row-start-6 row-end-11',
+        divClasses: 'col-span-4 row-span-5',
         imgClasses: '',
       },
     ],
@@ -161,15 +166,35 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'render3_1.mp4',
-        divClasses: 'col-span-full row-start-1 row-end-11',
+        divClasses: 'col-span-full row-span-10',
         imgClasses: '',
       },
-      { src: 'grapefruit.png', divClasses: 'row-span-7', imgClasses: '' },
-      { src: 'grapefruit back.png', divClasses: 'row-span-7', imgClasses: '' },
-      { src: 'lemon lime.png', divClasses: 'row-span-7', imgClasses: '' },
-      { src: 'lemon lime back.png', divClasses: 'row-span-7', imgClasses: '' },
-      { src: 'peach.png', divClasses: 'row-span-7', imgClasses: '' },
-      { src: 'peach back.png', divClasses: 'row-span-7', imgClasses: '' },
+      {
+        src: 'grapefruit.png',
+        divClasses: 'row-span-7 col-span-2',
+        imgClasses: '',
+      },
+      {
+        src: 'grapefruit back.png',
+        divClasses: 'row-span-7 col-span-2',
+        imgClasses: '',
+      },
+      {
+        src: 'lemon lime.png',
+        divClasses: 'row-span-7 col-span-2',
+        imgClasses: '',
+      },
+      {
+        src: 'lemon lime back.png',
+        divClasses: 'row-span-7 col-span-2',
+        imgClasses: '',
+      },
+      { src: 'peach.png', divClasses: 'row-span-7 col-span-2', imgClasses: '' },
+      {
+        src: 'peach back.png',
+        divClasses: 'row-span-7 col-span-2',
+        imgClasses: '',
+      },
     ],
     title: 'Vina Soda',
     summary:
@@ -207,7 +232,7 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'tickets mockup.png',
-        divClasses: 'col-span-4 row-start-1 row-end-5',
+        divClasses: 'col-span-4 row-start-1 row-end-6',
         imgClasses: '',
       },
       {
@@ -217,7 +242,7 @@ export const imgList: ImgObject[] = [
       },
       {
         src: 'vinyl mockup.png',
-        divClasses: '',
+        divClasses: 'col-span-4 row-span-5',
         imgClasses: 'object-contain h-auto',
       },
     ],
@@ -232,8 +257,8 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'web_redesign_walkthrough.mp4',
-        divClasses: 'col-span-full',
-        imgClasses: 'object-fit h-[850px] w-full',
+        divClasses: 'col-span-full row-span-11',
+        imgClasses: '',
       },
     ],
     title: 'Web Redesign',
