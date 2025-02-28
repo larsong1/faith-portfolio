@@ -16,6 +16,7 @@ export default function Home() {
               autoPlay
               loop
               muted
+              playsInline
               className={`object-cover w-full h-full`}
             >
               <source src="/img/fade (1).mp4" type="video/mp4" />
