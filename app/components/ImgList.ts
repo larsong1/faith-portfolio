@@ -16,22 +16,22 @@ interface ProjectPictures {
 export const imgList: ImgObject[] = [
   {
     mainImgSrc: 'book graphic.png',
-    divClasses: '',
+    divClasses: 'md:',
     id: 'classic_book_covers',
     projectPics: [
       {
         src: 'henry v.png',
-        divClasses: 'col-span-4 row-span-6',
+        divClasses: 'md:col-span-4 md:row-span-6',
         imgClasses: ' ',
       },
       {
         src: 'hamlet.png',
-        divClasses: 'col-span-4 row-span-6',
+        divClasses: 'md:col-span-4 md:row-span-6',
         imgClasses: ' ',
       },
       {
         src: 'macbeth.png',
-        divClasses: 'col-span-4 row-span-6',
+        divClasses: 'md:col-span-4 md:row-span-6',
         imgClasses: ' ',
       },
       {
@@ -51,52 +51,52 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'mag cover1 copy.png',
-        divClasses: 'col-span-4 row-span-6',
+        divClasses: 'md:col-span-4 md:row-span-6',
         imgClasses: ' ',
       },
       {
         src: 'mag cover2.png',
-        divClasses: 'col-span-4 row-span-6',
+        divClasses: 'md:col-span-4 md:row-span-6',
         imgClasses: ' ',
       },
       {
         src: 'mag cover3.png',
-        divClasses: 'col-span-4 row-span-6',
+        divClasses: 'md:col-span-4 md:row-span-6',
         imgClasses: ' ',
       },
       {
         src: 'mag pages mockup 2.png',
-        divClasses: 'col-span-6 row-span-6',
+        divClasses: 'md:col-span-6 md:row-span-6',
         imgClasses: ' ',
       },
       {
         src: 'mag table of contents.png',
-        divClasses: 'col-span-6 row-span-6',
+        divClasses: 'md:col-span-6 md:row-span-6',
         imgClasses: ' ',
       },
       {
         src: 'mag pages mockup 3.png',
-        divClasses: 'row-span-4 col-span-4',
+        divClasses: 'md:row-span-4 md:col-span-4',
         imgClasses: ' ',
       },
       {
         src: 'pages 1-2.png',
-        divClasses: 'row-span-4 col-span-4',
+        divClasses: 'md:row-span-4 md:col-span-4',
         imgClasses: ' ',
       },
       {
         src: 'pages 3-4.png',
-        divClasses: 'row-span-4 col-span-4',
+        divClasses: 'md:row-span-4 md:col-span-4',
         imgClasses: ' ',
       },
       {
         src: 'pages 5-6.png',
-        divClasses: 'col-span-6 row-span-6',
+        divClasses: 'md:col-span-6 md:row-span-6',
         imgClasses: ' ',
       },
       {
         src: 'pages 7-8.png',
-        divClasses: 'col-span-6 row-span-6',
+        divClasses: 'md:col-span-6 md:row-span-6',
         imgClasses: ' ',
       },
     ],
@@ -111,22 +111,22 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: '5th stationery.png',
-        divClasses: 'col-span-6 row-span-6',
+        divClasses: 'md:col-span-6 md:row-span-6',
         imgClasses: ' ',
       },
       {
         src: '5th tickets.png',
-        divClasses: 'col-span-6 row-span-8',
+        divClasses: 'md:col-span-6 md:row-span-8',
         imgClasses: '',
       },
       {
         src: 'banner 5th.png',
-        divClasses: 'col-span-6 row-span-8',
+        divClasses: 'md:col-span-6 md:row-span-8',
         imgClasses: '',
       },
       {
         src: 'website 5th.png',
-        divClasses: 'col-span-6 row-span-6',
+        divClasses: 'md:col-span-6 md:row-span-6',
         imgClasses: '',
       },
     ],
@@ -141,17 +141,17 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'cards mockup 2.png',
-        divClasses: 'col-span-8 row-span-10',
+        divClasses: 'md:col-span-8 md:row-span-10',
         imgClasses: '',
       },
       {
         src: 'cards2.png',
-        divClasses: 'col-span-4 row-span-5',
+        divClasses: 'md:col-span-4 md:row-span-5',
         imgClasses: '',
       },
       {
         src: 'cards4.png',
-        divClasses: 'col-span-4 row-span-5',
+        divClasses: 'md:col-span-4 md:row-span-5',
         imgClasses: '',
       },
     ],
@@ -166,33 +166,37 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'render3_1.mp4',
-        divClasses: 'col-span-full row-span-10',
+        divClasses: 'md:col-span-full md:row-span-10',
         imgClasses: '',
       },
       {
         src: 'grapefruit.png',
-        divClasses: 'row-span-7 col-span-2',
+        divClasses: 'md:row-span-7 md:col-span-2',
         imgClasses: '',
       },
       {
         src: 'grapefruit back.png',
-        divClasses: 'row-span-7 col-span-2',
+        divClasses: 'md:row-span-7 md:col-span-2',
         imgClasses: '',
       },
       {
         src: 'lemon lime.png',
-        divClasses: 'row-span-7 col-span-2',
+        divClasses: 'md:row-span-7 md:col-span-2',
         imgClasses: '',
       },
       {
         src: 'lemon lime back.png',
-        divClasses: 'row-span-7 col-span-2',
+        divClasses: 'md:row-span-7 md:col-span-2',
         imgClasses: '',
       },
-      { src: 'peach.png', divClasses: 'row-span-7 col-span-2', imgClasses: '' },
+      {
+        src: 'peach.png',
+        divClasses: 'md:row-span-7 md:col-span-2',
+        imgClasses: '',
+      },
       {
         src: 'peach back.png',
-        divClasses: 'row-span-7 col-span-2',
+        divClasses: 'md:row-span-7 md:col-span-2',
         imgClasses: '',
       },
     ],
@@ -207,17 +211,17 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'poster mockup1.png',
-        divClasses: 'col-span-full row-start-1 row-end-12',
+        divClasses: 'md:col-span-full md:row-start-1 md:row-end-12',
         imgClasses: '',
       },
       {
         src: 'poster mockup2.png',
-        divClasses: 'col-span-6 row-span-8',
+        divClasses: 'md:col-span-6 md:row-span-8',
         imgClasses: '',
       },
       {
         src: 'listen poster copy.png',
-        divClasses: 'col-span-6 row-span-8',
+        divClasses: 'md:col-span-6 md:row-span-8',
         imgClasses: '',
       },
     ],
@@ -232,17 +236,17 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'tickets mockup.png',
-        divClasses: 'col-span-4 row-start-1 row-end-6',
+        divClasses: 'md:col-span-4 md:row-start-1 md:row-end-6',
         imgClasses: '',
       },
       {
         src: 'pink floyd posters copy.png',
-        divClasses: 'col-span-8 row-start-1 row-end-11',
+        divClasses: 'md:col-span-8 md:row-start-1 md:row-end-11',
         imgClasses: '',
       },
       {
         src: 'vinyl mockup.png',
-        divClasses: 'col-span-4 row-span-5',
+        divClasses: 'md:col-span-4 md:row-span-5',
         imgClasses: 'object-contain h-auto',
       },
     ],
@@ -257,7 +261,7 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'web_redesign_walkthrough.mp4',
-        divClasses: 'col-span-full row-span-11',
+        divClasses: 'md:col-span-full md:row-span-11',
         imgClasses: '',
       },
     ],
