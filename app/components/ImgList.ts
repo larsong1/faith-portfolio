@@ -171,7 +171,12 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'cans rotating.mp4',
-        divClasses: 'md:col-span-full md:row-span-12',
+        divClasses: 'md:col-span-6 md:row-span-8',
+        imgClasses: '',
+      },
+      {
+        src: 'pan around cans.mp4',
+        divClasses: 'md:col-span-6 md:row-span-8',
         imgClasses: '',
       },
       {
