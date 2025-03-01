@@ -226,7 +226,7 @@ export const imgList: ImgObject[] = [
       },
       {
         src: 'posters copy.png',
-        divClasses: 'md:col-span-8 md:row-start-1 md:row-end-11',
+        divClasses: 'md:col-span-8 md:row-span-10',
         imgClasses: '',
       },
       {
