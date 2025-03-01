@@ -201,11 +201,6 @@ export const imgList: ImgObject[] = [
     projectPics: [
       {
         src: 'poster mockup2.png',
-        divClasses: 'md:col-span-full md:row-span-12',
-        imgClasses: '',
-      },
-      {
-        src: 'poster mockup1.png',
         divClasses: 'md:col-span-6 md:row-span-8',
         imgClasses: '',
       },
