@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <div
       className={clsx(
-        'flex justify-between h-14 my-20',
+        'flex justify-between h-14 my-20 px-7 md:px-20',
         !isRootRoute && 'border-b border-black pb-5 h-19 mb-20 mt-0'
       )}
     >
@@ -28,7 +28,7 @@ export default function Header() {
       <div className="min-w-[100px] w-fit">
         <Link href="/">
           <Image
-            src={'/img/logo.png'}
+            src={'/img/mylogo_1.png'}
             height={200}
             width={400}
             className="h-full w-auto object-contain"

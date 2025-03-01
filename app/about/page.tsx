@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -30,7 +31,12 @@ export default function Page() {
           height={400}
         />
         <p className="mt-7">
-          faithastoria@gmail.com
+          <Link
+            href="mailto:faithastoria@gmail.com"
+            className="hover:text-gray-500"
+          >
+            faithastoria@gmail.com
+          </Link>
           <br />
           509-438-1392
         </p>
