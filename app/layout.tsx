@@ -26,11 +26,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased mx-7 bg-white my-14 md:mx-20`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
       >
         <main>
-          <Header />
-          {children}
+          <div className="my-14">
+            <Header />
+          </div>
+
+          <div className="mx-7 my-14 md:mx-20">{children}</div>
         </main>
       </body>
     </html>

@@ -36,7 +36,12 @@ export const imgList: ImgObject[] = [
       },
       {
         src: '2 books.png',
-        divClasses: 'md:col-span-full md:row-span-10',
+        divClasses: 'md:col-span-6 md:row-span-7',
+        imgClasses: ' ',
+      },
+      {
+        src: 'book graphic copy.png',
+        divClasses: 'md:col-span-6 md:row-span-7',
         imgClasses: ' ',
       },
     ],
@@ -160,43 +165,23 @@ export const imgList: ImgObject[] = [
       'Creating the design for this pack of cards was super fun! I wanted it to be very simplified but illustration based. I hoped to create a lot of interesting contrast by having each side either black on white or white on black. I loved how it turned out!',
   },
   {
-    mainImgSrc: 'spinning_cans.mp4',
+    mainImgSrc: 'cans rotating.mp4',
     divClasses: '',
     id: 'vina_soda',
     projectPics: [
       {
-        src: 'render3_1.mp4',
-        divClasses: 'md:col-span-full md:row-span-10',
+        src: 'cans rotating.mp4',
+        divClasses: 'md:col-span-full md:row-span-12',
         imgClasses: '',
       },
       {
-        src: 'grapefruit.png',
-        divClasses: 'md:row-span-7 md:col-span-2',
+        src: 'front cans.png',
+        divClasses: 'md:row-span-6 md:col-span-6',
         imgClasses: '',
       },
       {
-        src: 'grapefruit back.png',
-        divClasses: 'md:row-span-7 md:col-span-2',
-        imgClasses: '',
-      },
-      {
-        src: 'lemon lime.png',
-        divClasses: 'md:row-span-7 md:col-span-2',
-        imgClasses: '',
-      },
-      {
-        src: 'lemon lime back.png',
-        divClasses: 'md:row-span-7 md:col-span-2',
-        imgClasses: '',
-      },
-      {
-        src: 'peach.png',
-        divClasses: 'md:row-span-7 md:col-span-2',
-        imgClasses: '',
-      },
-      {
-        src: 'peach back.png',
-        divClasses: 'md:row-span-7 md:col-span-2',
+        src: 'back cans.png',
+        divClasses: 'md:row-span-6 md:col-span-6',
         imgClasses: '',
       },
     ],
@@ -210,12 +195,12 @@ export const imgList: ImgObject[] = [
     id: 'listen_poster',
     projectPics: [
       {
-        src: 'poster mockup1.png',
-        divClasses: 'md:col-span-full md:row-start-1 md:row-end-12',
+        src: 'poster mockup2.png',
+        divClasses: 'md:col-span-full md:row-span-12',
         imgClasses: '',
       },
       {
-        src: 'poster mockup2.png',
+        src: 'poster mockup1.png',
         divClasses: 'md:col-span-6 md:row-span-8',
         imgClasses: '',
       },
@@ -230,7 +215,7 @@ export const imgList: ImgObject[] = [
       'I made this poster because listening is something I am really passionate about. I think most of us listen in order to add our next comment or story to the conversation instead of listening to truly hear or understand. This poster was meant to be a reminder to myself and everyone else that our relationships can really only prosper if we listen as if what people are saying really matters to us—and it needs to matter.',
   },
   {
-    mainImgSrc: 'pink floyd posters.png',
+    mainImgSrc: 'posters.png',
     divClasses: '',
     id: 'pink_floyd',
     projectPics: [
@@ -240,13 +225,23 @@ export const imgList: ImgObject[] = [
         imgClasses: '',
       },
       {
-        src: 'pink floyd posters copy.png',
+        src: 'posters copy.png',
         divClasses: 'md:col-span-8 md:row-start-1 md:row-end-11',
         imgClasses: '',
       },
       {
         src: 'vinyl mockup.png',
         divClasses: 'md:col-span-4 md:row-span-5',
+        imgClasses: 'object-contain h-auto',
+      },
+      {
+        src: 'beanie.png',
+        divClasses: 'md:col-span-6 md:row-span-6',
+        imgClasses: 'object-contain h-auto',
+      },
+      {
+        src: 'square stickers.png',
+        divClasses: 'md:col-span-6 md:row-span-6',
         imgClasses: 'object-contain h-auto',
       },
     ],
