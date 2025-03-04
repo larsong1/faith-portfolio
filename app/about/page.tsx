@@ -28,6 +28,7 @@ export default function Page() {
           className="object-cover w-full h-full"
           width={400}
           height={400}
+          unoptimized={true}
         />
       </div>
     </div>
