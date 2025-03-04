@@ -20,7 +20,7 @@ export default function Header() {
       {isRootRoute && (
         <div className="w-full pt-4">
           <p className="tracking-widest text-[14px] hidden sm:flex">
-            FAITH MCCREADIE
+            FAITH ASTORIA MCCREADIE
           </p>
         </div>
       )}
@@ -46,6 +46,11 @@ export default function Header() {
             ABOUT
           </Link>
         )}
+        {
+          <Link href="/contact" className="ml-5 hover:scale-105">
+            CONTACT
+          </Link>
+        }
       </div>
     </div>
   );

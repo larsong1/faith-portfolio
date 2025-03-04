@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -10,8 +9,8 @@ export default function Page() {
         <p>
           Hi, I’m Faith, a graphic design student at BYU in Provo. I absolutely
           love all things design, typography and branding as well as my family
-          and my wonderful husband. I’m from Washington and the pacific
-          northwest will always be my home. I love playing intense board games
+          and my wonderful husband. I’m from Washington and the Pacific
+          Northwest will always be my home. I love playing intense board games
           (and winning) and taking pictures to remember the most important
           moments.
           <br />
@@ -30,16 +29,6 @@ export default function Page() {
           width={400}
           height={400}
         />
-        <p className="mt-7">
-          <Link
-            href="mailto:faithastoria@gmail.com"
-            className="hover:text-gray-500"
-          >
-            faithastoria@gmail.com
-          </Link>
-          <br />
-          509-438-1392
-        </p>
       </div>
     </div>
   );
