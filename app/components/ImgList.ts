@@ -137,7 +137,7 @@ export const imgList: ImgObject[] = [
     ],
     title: '5th Avenue Theatre',
     summary:
-      'The 5th Avenue Theatre in Seattle is something I have visited many times throughout my life. It’s a staple of the city and brings people together in an impactful way. I wanted my design to be simple but also seem elegant to show that this theatre is for everyone? I also based it on the geometric star shapes in the ornate ceiling and created a very geometric shape for the logo. By doing so I hoped to pay homage to the rich history of the theatre.',
+      'The 5th Avenue Theatre in Seattle is something I have visited many times throughout my life. It’s a staple of the city and brings people together in an impactful way. I wanted my design to be simple but also seem elegant to show that this theatre is for everyone. I also based it on the geometric star shapes in the ornate ceiling and created a very geometric shape for the logo. By doing so I hoped to pay homage to the rich history of the theatre.',
   },
   {
     mainImgSrc: 'cards.png',
