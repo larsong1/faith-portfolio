@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Adrianna', 'Arial', 'sans-serif'],
+        adrianna: ['Adrianna', 'Arial', 'sans-serif'],
+      },
       colors: {
         /*background: "var(--background)",
         foreground: "var(--foreground)",*/
