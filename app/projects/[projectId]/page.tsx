@@ -51,6 +51,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   width={400}
                   height={400} // Default dimensions; actual size controlled by grid
                   className={`object-cover w-full h-full ${imgClasses}`}
+                  unoptimized={true}
                 />
               </div>
             )}

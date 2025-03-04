@@ -33,6 +33,7 @@ export default function Header() {
             width={400}
             className="h-full w-auto object-contain"
             alt=""
+            unoptimized={true}
           />
         </Link>
       </div>

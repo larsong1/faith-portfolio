@@ -41,6 +41,7 @@ export default function Home() {
                   width={400}
                   height={400} // Default dimensions; actual size controlled by grid
                   className="h-full w-full cursor-pointer"
+                  unoptimized={true}
                 />
               </Link>
             )}
