@@ -9,6 +9,7 @@ export default function Header() {
   const pathname = usePathname();
   const isRootRoute = pathname === '/';
   const isAboutRoute = pathname === '/about';
+  const isContactRoute = pathname === '/contact';
 
   return (
     <div
@@ -17,15 +18,18 @@ export default function Header() {
         !isRootRoute && 'border-b border-black pb-5 h-19 mb-20 mt-0'
       )}
     >
-      {isRootRoute && (
-        <div className="w-full pt-4">
-          <p className="tracking-widest text-[14px] hidden sm:flex">
-            FAITH ASTORIA MCCREADIE
-          </p>
-        </div>
-      )}
+      <div className="w-full pt-4 tracking-widest text-[14px]">
+        {isRootRoute && (
+          <p className=" hidden sm:flex">FAITH ASTORIA MCCREADIE</p>
+        )}
+        {!isContactRoute && (
+          <Link href="/contact" className="hover:scale-105 sm:hidden">
+            CONTACT
+          </Link>
+        )}
+      </div>
 
-      <div className="min-w-[100px] w-fit">
+      <div className="min-w-[100px] w-fit flex justify-center">
         <Link href="/">
           <Image
             src={'/img/mylogo_1.png'}
@@ -47,11 +51,11 @@ export default function Header() {
             ABOUT
           </Link>
         )}
-        {
-          <Link href="/contact" className="ml-5 hover:scale-105">
+        {!isContactRoute && (
+          <Link href="/contact" className="ml-5 hover:scale-105 hidden sm:flex">
             CONTACT
           </Link>
-        }
+        )}
       </div>
     </div>
   );
