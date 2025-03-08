@@ -18,10 +18,13 @@ export default function Header() {
         !isRootRoute && 'border-b border-black pb-5 h-19 mb-20 mt-0'
       )}
     >
-      <div className="w-full pt-4 tracking-widest text-[14px]">
-        {isRootRoute && (
-          <p className=" hidden sm:flex">FAITH ASTORIA MCCREADIE</p>
+      <div
+        className={clsx(
+          'w-full tracking-widest text-[14px]',
+          isRootRoute ? 'pt-4' : 'pt-2'
         )}
+      >
+        <p className=" hidden sm:flex">FAITH ASTORIA MCCREADIE</p>
         {!isContactRoute && (
           <Link href="/contact" className="hover:scale-105 sm:hidden">
             CONTACT
@@ -30,18 +33,23 @@ export default function Header() {
       </div>
 
       <div className="min-w-[100px] w-fit flex justify-center">
-        <Link href="/">
+        <Link href="/" className="w-auto">
           <Image
             src={'/img/mylogo_1.png'}
             height={200}
             width={400}
-            className="h-full w-auto object-contain"
+            className="h-full object-contain"
             alt=""
             unoptimized={true}
           />
         </Link>
       </div>
-      <div className="w-full flex justify-end transition tracking-widest text-[14px] pt-4">
+      <div
+        className={clsx(
+          'w-full flex justify-end transition tracking-widest text-[14px]',
+          isRootRoute ? 'pt-4' : 'pt-2'
+        )}
+      >
         {isAboutRoute ? (
           <Link href="/" className="hover:scale-105">
             HOME
