@@ -11,6 +11,9 @@ interface ProjectPictures {
   src: string;
   divClasses: string;
   imgClasses: string;
+  controls?: boolean;
+  muted?: boolean;
+  loop?: boolean;
 }
 
 export const imgList: ImgObject[] = [
@@ -22,27 +25,27 @@ export const imgList: ImgObject[] = [
       {
         src: 'henry v.png',
         divClasses: 'md:col-span-4 md:row-span-6',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: 'hamlet.png',
         divClasses: 'md:col-span-4 md:row-span-6',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: 'macbeth.png',
         divClasses: 'md:col-span-4 md:row-span-6',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: '2 books.png',
         divClasses: 'md:col-span-6 md:row-span-7',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: 'book graphic copy.png',
         divClasses: 'md:col-span-6 md:row-span-7',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
     ],
     title: 'Classic Book Covers',
@@ -57,52 +60,52 @@ export const imgList: ImgObject[] = [
       {
         src: 'mag cover1 copy.png',
         divClasses: 'md:col-span-4 md:row-span-6',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: 'mag cover2.png',
         divClasses: 'md:col-span-4 md:row-span-6',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: 'mag cover3.png',
         divClasses: 'md:col-span-4 md:row-span-6',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: 'mag pages mockup 2.png',
         divClasses: 'md:col-span-6 md:row-span-6',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: 'mag table of contents.png',
         divClasses: 'md:col-span-6 md:row-span-6',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: 'mag pages mockup 3.png',
         divClasses: 'md:row-span-4 md:col-span-4',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: 'pages 1-2.png',
         divClasses: 'md:row-span-4 md:col-span-4',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: 'pages 3-4.png',
         divClasses: 'md:row-span-4 md:col-span-4',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: 'pages 5-6.png',
         divClasses: 'md:col-span-6 md:row-span-6',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: 'pages 7-8.png',
         divClasses: 'md:col-span-6 md:row-span-6',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
     ],
     title: 'Vintage Rock Magazine',
@@ -117,27 +120,27 @@ export const imgList: ImgObject[] = [
       {
         src: '5th stationery.png',
         divClasses: 'md:col-span-6 md:row-span-6',
-        imgClasses: ' ',
+        imgClasses: 'object-cover',
       },
       {
         src: '5th tickets.png',
         divClasses: 'md:col-span-6 md:row-span-8',
-        imgClasses: '',
+        imgClasses: 'object-cover',
       },
       {
         src: 'banner 5th.png',
         divClasses: 'md:col-span-6 md:row-span-8',
-        imgClasses: '',
+        imgClasses: 'object-cover',
       },
       {
         src: 'website 5th.png',
         divClasses: 'md:col-span-6 md:row-span-6',
-        imgClasses: '',
+        imgClasses: 'object-cover',
       },
     ],
     title: '5th Avenue Theatre',
     summary:
-      'The 5th Avenue Theatre in Seattle is something I have visited many times throughout my life. It’s a staple of the city and brings people together in an impactful way. I wanted my design to be simple but also seem elegant to show that this theatre is for everyone. I also based it on the geometric star shapes in the ornate ceiling and created a very geometric shape for the logo. By doing so I hoped to pay homage to the rich history of the theatre.',
+      "The 5th Avenue Theatre in Seattle is something I have visited many times throughout my life. It's a staple of the city and brings people together in an impactful way. I wanted my design to be simple but also seem elegant to show that this theatre is for everyone. I also based it on the geometric star shapes in the ornate ceiling and created a very geometric shape for the logo. By doing so I hoped to pay homage to the rich history of the theatre.",
   },
   {
     mainImgSrc: 'cards.png',
@@ -147,17 +150,17 @@ export const imgList: ImgObject[] = [
       {
         src: 'cards mockup 2.png',
         divClasses: 'md:col-span-8 md:row-span-10',
-        imgClasses: '',
+        imgClasses: 'object-cover',
       },
       {
         src: 'cards2.png',
         divClasses: 'md:col-span-4 md:row-span-5',
-        imgClasses: '',
+        imgClasses: 'object-cover',
       },
       {
         src: 'cards4.png',
         divClasses: 'md:col-span-4 md:row-span-5',
-        imgClasses: '',
+        imgClasses: 'object-cover',
       },
     ],
     title: 'Playing Cards',
@@ -172,22 +175,28 @@ export const imgList: ImgObject[] = [
       {
         src: 'cans rotating.mp4',
         divClasses: 'md:col-span-6 md:row-span-8',
-        imgClasses: '',
+        imgClasses: 'object-cover',
+        loop: true,
+        controls: false,
+        muted: true,
       },
       {
         src: 'pan around cans.mp4',
         divClasses: 'md:col-span-6 md:row-span-8',
-        imgClasses: '',
+        imgClasses: 'object-cover',
+        loop: true,
+        controls: false,
+        muted: true,
       },
       {
         src: 'front cans.png',
         divClasses: 'md:row-span-6 md:col-span-6',
-        imgClasses: '',
+        imgClasses: 'object-cover',
       },
       {
         src: 'back cans.png',
         divClasses: 'md:row-span-6 md:col-span-6',
-        imgClasses: '',
+        imgClasses: 'object-cover',
       },
     ],
     title: 'Vina Soda',
@@ -202,12 +211,12 @@ export const imgList: ImgObject[] = [
       {
         src: 'poster mockup2.png',
         divClasses: 'md:col-span-6 md:row-span-8',
-        imgClasses: '',
+        imgClasses: 'object-cover',
       },
       {
         src: 'listen poster copy.png',
         divClasses: 'md:col-span-6 md:row-span-8',
-        imgClasses: '',
+        imgClasses: 'object-cover',
       },
     ],
     title: 'Listen Poster',
@@ -222,27 +231,27 @@ export const imgList: ImgObject[] = [
       {
         src: 'tickets mockup.png',
         divClasses: 'md:col-span-4 md:row-start-1 md:row-end-6',
-        imgClasses: '',
+        imgClasses: 'object-cover',
       },
       {
         src: 'posters copy.png',
         divClasses: 'md:col-span-8 md:row-span-10',
-        imgClasses: '',
+        imgClasses: 'object-cover',
       },
       {
         src: 'vinyl mockup.png',
         divClasses: 'md:col-span-4 md:row-span-5',
-        imgClasses: 'object-contain h-auto',
+        imgClasses: 'object-cover h-auto',
       },
       {
         src: 'beanie.png',
         divClasses: 'md:col-span-6 md:row-span-6',
-        imgClasses: 'object-contain h-auto',
+        imgClasses: 'object-cover h-auto',
       },
       {
         src: 'square stickers.png',
         divClasses: 'md:col-span-6 md:row-span-6',
-        imgClasses: 'object-contain h-auto',
+        imgClasses: 'object-cover h-auto',
       },
     ],
     title: 'Pink Floyd',
@@ -257,7 +266,10 @@ export const imgList: ImgObject[] = [
       {
         src: 'web_redesign_walkthrough.mp4',
         divClasses: 'md:col-span-full md:row-span-11',
-        imgClasses: '',
+        imgClasses: 'object-contain',
+        controls: false,
+        muted: true,
+        loop: true,
       },
     ],
     title: 'Web Redesign',
@@ -273,6 +285,9 @@ export const imgList: ImgObject[] = [
         src: 'evita.mp4',
         divClasses: 'md:col-span-full md:row-span-12',
         imgClasses: 'object-contain',
+        controls: true,
+        muted: false,
+        loop: false,
       },
     ],
     title: 'Evita Title Sequence',

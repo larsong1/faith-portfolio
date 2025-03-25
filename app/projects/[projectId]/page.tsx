@@ -23,40 +23,43 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="w-4/5 mx-auto text-sm">{projectImgObject.summary}</div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 md:auto-rows-[50px] gap-7">
-        {projectImgObject.projectPics.map(({ src, divClasses, imgClasses }) => (
-          <React.Fragment key={src}>
-            {src.endsWith('.mp4') ? (
-              <div className={divClasses ?? 'col-span-4 row-span-6'}>
-                <video
-                  width={400}
-                  height={400}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className={`object-cover w-full h-full ${imgClasses}`}
-                >
-                  <source
+        {projectImgObject.projectPics.map(
+          ({ src, divClasses, imgClasses, loop, controls, muted }) => (
+            <React.Fragment key={src}>
+              {src.endsWith('.mp4') ? (
+                <div className={divClasses ?? 'col-span-4 row-span-6'}>
+                  <video
+                    width={400}
+                    height={400}
+                    autoPlay
+                    loop={loop}
+                    playsInline
+                    controls={controls}
+                    muted={muted}
+                    className={`w-full h-full ${imgClasses}`}
+                  >
+                    <source
+                      src={`/img/${projectImgObject.id + '/' + src}`}
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              ) : (
+                <div className={divClasses ?? 'col-span-4 row-span-6'}>
+                  <Image
                     src={`/img/${projectImgObject.id + '/' + src}`}
-                    type="video/mp4"
+                    alt={src.replace(/[-.]/g, ' ')} // Dynamically generate alt text
+                    width={400}
+                    height={400} // Default dimensions; actual size controlled by grid
+                    className={`object-cover w-full h-full ${imgClasses}`}
+                    unoptimized={true}
                   />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            ) : (
-              <div className={divClasses ?? 'col-span-4 row-span-6'}>
-                <Image
-                  src={`/img/${projectImgObject.id + '/' + src}`}
-                  alt={src.replace(/[-.]/g, ' ')} // Dynamically generate alt text
-                  width={400}
-                  height={400} // Default dimensions; actual size controlled by grid
-                  className={`object-cover w-full h-full ${imgClasses}`}
-                  unoptimized={true}
-                />
-              </div>
-            )}
-          </React.Fragment>
-        ))}
+                </div>
+              )}
+            </React.Fragment>
+          )
+        )}
       </div>
     </main>
   );
