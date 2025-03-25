@@ -47,7 +47,7 @@ export default function Home() {
             )}
           </div>
         ))}
-        <Link href={`/about`}>
+        {/* <Link href={`/about`}>
           <div className="hover:scale-105 col-span-1">
             <video
               width={400}
@@ -62,7 +62,7 @@ export default function Home() {
               Your browser does not support the video tag.
             </video>
           </div>
-        </Link>
+        </Link> */}
       </div>
     </main>
   );

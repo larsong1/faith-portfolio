@@ -264,4 +264,19 @@ export const imgList: ImgObject[] = [
     summary:
       'Redesigning the website for the American Book Review was a super cool design project. With this redesign I tried to create a simple but more interesting logo that could be used in a variety of applications, as well as an identity that felt more professional and formal as well as still welcoming. I also wanted to create an interface that was easy to navigate and user friendly so that anyone wanting to use the website could easily find what they were looking for.',
   },
+  {
+    mainImgSrc: 'evita preview.mp4',
+    divClasses: '',
+    id: 'evita',
+    projectPics: [
+      {
+        src: 'evita.mp4',
+        divClasses: 'md:col-span-full md:row-span-12',
+        imgClasses: 'object-contain',
+      },
+    ],
+    title: 'Evita Title Sequence',
+    summary:
+      'For this project I recreated the title sequence for the movie Evita. It is a musical about the life and legacy of Eva Perón who was the wife of the President of Argentina and one of its most revered leaders. The movie explores the idea of whether she was truly benevolent or just self-interested. I wanted my design to reflect that. The main idea is that Eva is traveling through her life, meeting (and some would argue using) different people to reach the top. However, she is also dying of an illness and has very little time left. The animation I created explores these ideas of success, betrayal, heartache and power.',
+  },
 ];
