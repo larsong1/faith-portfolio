@@ -18,32 +18,6 @@ interface ProjectPictures {
 
 export const imgList: ImgObject[] = [
   {
-    mainImgSrc: 'bon o bon.gif',
-    divClasses: '',
-    id: 'bon_o_bon',
-    projectPics: [
-      {
-        src: 'bonobon2.png',
-        divClasses: 'md:col-span-4 md:row-span-5',
-        imgClasses: 'object-contain',
-      },
-      {
-        src: 'bonobon3.png',
-        divClasses: 'md:col-span-4 md:row-span-5',
-        imgClasses: 'object-contain',
-      },
-      {
-        src: 'bonobon4.png',
-        divClasses: 'md:col-span-4 md:row-span-5',
-        imgClasses: 'object-contain',
-      },
-    ],
-    title: 'Bon o Bon',
-    summary:
-      'Bon o Bon is an Argentina cookies and candy brand. They focus on having bright and fun products that are for all ages. Food and treats in Argentina are a very social thing, every loves to get together to eat and drink mate (herbal tea) and so I wanted my branding to be friendly and welcoming. The bright colors and fun and bouncy logotype are meant to reflect this mood and invite you in!',
-  },
-
-  {
     mainImgSrc: 'magazine.png',
     divClasses: '',
     id: 'vintage_rock_magazine',
@@ -132,6 +106,31 @@ export const imgList: ImgObject[] = [
     title: '5th Avenue Theatre',
     summary:
       "The 5th Avenue Theatre in Seattle is something I have visited many times throughout my life. It's a staple of the city and brings people together in an impactful way. I wanted my design to be simple but also seem elegant to show that this theatre is for everyone. I also based it on the geometric star shapes in the ornate ceiling and created a very geometric shape for the logo. By doing so I hoped to pay homage to the rich history of the theatre.",
+  },
+  {
+    mainImgSrc: 'bon o bon.gif',
+    divClasses: '',
+    id: 'bon_o_bon',
+    projectPics: [
+      {
+        src: 'bonobon2.png',
+        divClasses: 'md:col-span-4 md:row-span-5',
+        imgClasses: 'object-contain',
+      },
+      {
+        src: 'bonobon3.png',
+        divClasses: 'md:col-span-4 md:row-span-5',
+        imgClasses: 'object-contain',
+      },
+      {
+        src: 'bonobon4.png',
+        divClasses: 'md:col-span-4 md:row-span-5',
+        imgClasses: 'object-contain',
+      },
+    ],
+    title: 'Bon o Bon',
+    summary:
+      'Bon o Bon is an Argentine cookie and candy brand. They focus on having bright and fun products that are for all ages. Food and treats in Argentina are a very social thing, everyone loves to get together to eat and drink mate (herbal tea) and so I wanted my branding to be friendly and welcoming. The bright colors and fun and bouncy logotype are meant to reflect this mood and invite you in!',
   },
   {
     mainImgSrc: 'cards.png',
