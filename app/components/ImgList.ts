@@ -18,40 +18,31 @@ interface ProjectPictures {
 
 export const imgList: ImgObject[] = [
   {
-    mainImgSrc: 'book graphic.png',
-    divClasses: 'md:',
-    id: 'classic_book_covers',
+    mainImgSrc: 'bon o bon.gif',
+    divClasses: '',
+    id: 'bon_o_bon',
     projectPics: [
       {
-        src: 'henry v.png',
-        divClasses: 'md:col-span-4 md:row-span-6',
-        imgClasses: 'object-cover',
+        src: 'bonobon2.png',
+        divClasses: 'md:col-span-4 md:row-span-5',
+        imgClasses: 'object-contain',
       },
       {
-        src: 'hamlet.png',
-        divClasses: 'md:col-span-4 md:row-span-6',
-        imgClasses: 'object-cover',
+        src: 'bonobon3.png',
+        divClasses: 'md:col-span-4 md:row-span-5',
+        imgClasses: 'object-contain',
       },
       {
-        src: 'macbeth.png',
-        divClasses: 'md:col-span-4 md:row-span-6',
-        imgClasses: 'object-cover',
-      },
-      {
-        src: '2 books.png',
-        divClasses: 'md:col-span-6 md:row-span-7',
-        imgClasses: 'object-cover',
-      },
-      {
-        src: 'book graphic copy.png',
-        divClasses: 'md:col-span-6 md:row-span-7',
-        imgClasses: 'object-cover',
+        src: 'bonobon4.png',
+        divClasses: 'md:col-span-4 md:row-span-5',
+        imgClasses: 'object-contain',
       },
     ],
-    title: 'Classic Book Covers',
+    title: 'Bon o Bon',
     summary:
-      'I have always had a love for Shakespeare. He was a master of the English language and his plays have classic themes about human nature and struggle. I wanted to show how this can translate to a modern sphere by using bright neon colors along with modern illustrations. I combined this with a textured, wood block typeface because I wanted it to have some tie to the past and a dramatic impact to show truly how influential these stories were and still are.',
+      'Bon o Bon is an Argentina cookies and candy brand. They focus on having bright and fun products that are for all ages. Food and treats in Argentina are a very social thing, every loves to get together to eat and drink mate (herbal tea) and so I wanted my branding to be friendly and welcoming. The bright colors and fun and bouncy logotype are meant to reflect this mood and invite you in!',
   },
+
   {
     mainImgSrc: 'magazine.png',
     divClasses: '',
@@ -276,22 +267,57 @@ export const imgList: ImgObject[] = [
     summary:
       'Redesigning the website for the American Book Review was a super cool design project. With this redesign I tried to create a simple but more interesting logo that could be used in a variety of applications, as well as an identity that felt more professional and formal as well as still welcoming. I also wanted to create an interface that was easy to navigate and user friendly so that anyone wanting to use the website could easily find what they were looking for.',
   },
+  // {
+  //   mainImgSrc: 'evita preview.mp4',
+  //   divClasses: '',
+  //   id: 'evita',
+  //   projectPics: [
+  //     {
+  //       src: 'evita.mp4',
+  //       divClasses: 'md:col-span-full md:row-span-12',
+  //       imgClasses: 'object-contain',
+  //       controls: true,
+  //       muted: false,
+  //       loop: false,
+  //     },
+  //   ],
+  //   title: 'Evita Title Sequence',
+  //   summary:
+  //     'For this project I recreated the title sequence for the movie Evita. It is a musical about the life and legacy of Eva Perón who was the wife of the President of Argentina and one of its most revered leaders. The movie explores the idea of whether she was truly benevolent or just self-interested. I wanted my design to reflect that. The main idea is that Eva is traveling through her life, meeting (and some would argue using) different people to reach the top. However, she is also dying of an illness and has very little time left. The animation I created explores these ideas of success, betrayal, heartache and power.',
+  // },
   {
-    mainImgSrc: 'evita preview.mp4',
-    divClasses: '',
-    id: 'evita',
+    mainImgSrc: 'book graphic.png',
+    divClasses: 'md:',
+    id: 'classic_book_covers',
     projectPics: [
       {
-        src: 'evita.mp4',
-        divClasses: 'md:col-span-full md:row-span-12',
-        imgClasses: 'object-contain',
-        controls: true,
-        muted: false,
-        loop: false,
+        src: 'henry v.png',
+        divClasses: 'md:col-span-4 md:row-span-6',
+        imgClasses: 'object-cover',
+      },
+      {
+        src: 'hamlet.png',
+        divClasses: 'md:col-span-4 md:row-span-6',
+        imgClasses: 'object-cover',
+      },
+      {
+        src: 'macbeth.png',
+        divClasses: 'md:col-span-4 md:row-span-6',
+        imgClasses: 'object-cover',
+      },
+      {
+        src: '2 books.png',
+        divClasses: 'md:col-span-6 md:row-span-7',
+        imgClasses: 'object-cover',
+      },
+      {
+        src: 'book graphic copy.png',
+        divClasses: 'md:col-span-6 md:row-span-7',
+        imgClasses: 'object-cover',
       },
     ],
-    title: 'Evita Title Sequence',
+    title: 'Classic Book Covers',
     summary:
-      'For this project I recreated the title sequence for the movie Evita. It is a musical about the life and legacy of Eva Perón who was the wife of the President of Argentina and one of its most revered leaders. The movie explores the idea of whether she was truly benevolent or just self-interested. I wanted my design to reflect that. The main idea is that Eva is traveling through her life, meeting (and some would argue using) different people to reach the top. However, she is also dying of an illness and has very little time left. The animation I created explores these ideas of success, betrayal, heartache and power.',
+      'I have always had a love for Shakespeare. He was a master of the English language and his plays have classic themes about human nature and struggle. I wanted to show how this can translate to a modern sphere by using bright neon colors along with modern illustrations. I combined this with a textured, wood block typeface because I wanted it to have some tie to the past and a dramatic impact to show truly how influential these stories were and still are.',
   },
 ];
