@@ -61,11 +61,13 @@ export default function Header() {
             ABOUT
           </Link>
         )}
-        {!isContactRoute && (
-          <Link href="/contact" className="ml-5 hover:scale-105">
-            CONTACT
-          </Link>
-        )}
+        <span className="hidden sm:inline-block">
+          {!isContactRoute && (
+            <Link href="/contact" className="ml-5 hover:scale-105">
+              CONTACT
+            </Link>
+          )}
+        </span>
       </div>
     </div>
   );
