@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -19,6 +20,14 @@ export default function Page() {
           skills to put messages of positivity, passion and life into the world.
           I hope to be able to be a force for good. Feel free to take a look
           around and reach out to me, I’d love to hear from you!
+          <br />
+          <br />
+          <Link
+            href="/contact"
+            className="inline-block px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors duration-200 no-underline"
+          >
+            Contact Me
+          </Link>
         </p>
       </div>
       <div className="lg:pl-[80px] basis-1/2 tracking-widest">
